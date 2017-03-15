@@ -1,24 +1,22 @@
 ### 说明
 
-在HTML的script标签中加入crossorigin="anonymous"
+fis插件：编写HTML打包时增加script crossorigin跨域的属性
 
 ### 安装
 
 ```javascript
-   npm install html-webpack-script-crossorigin-plugin 
+   npm install fis-postpackager-crossorigin -g
 ```
 
 ### 使用
 
 ```javascript
-    //配置srcOrigin来添加crossorigin="anonymous"
-    //srcOrigin为false或未定义的时候，则全局都添加crossorigin="anonymous"
-    plugins = [
-        new HtmlWebpackScriptCrossoriginPlugin({
-            srcOrigin: "s4.fx.kgimg.com" //可以是数组，也可以是string
+       
+    //fis3配置
+    fis.match('::package', {
+    postpackager:[
+        fis.plugin('crossorigin',{
+            srcOrigin: "http://www.xxx.com" //可以是string，也可以是array
         })
-    ]
-```
+	]
 
-### 注意
-如果和**会更改HTML中资源src的插件**混用，请把该插件**放到最后**，因为该插件是通过匹配script标签中的src来添加crossorigin="anonymous"的

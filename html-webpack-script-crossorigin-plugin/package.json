@@ -1,15 +1,19 @@
 {
-  "name": "html-webpack-script-crossorigin-plugin",
+  "name": "fis-postpackager-crossorigin",
   "version": "1.0.0",
-  "description": "Plugin for htlm-webpack-plugin to add crossorigin attribute to injected script tag",
+  "description": "将script标签添加crossorigin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "YimaFeng",
+  "license": "ISC",
+  "keywords": [
+    "fis3",
+    "crossorigin"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fengyima/html-webpack-script-crossorigin-plugin"
-  },
-  "author": "fengyima",
-  "license": "ISC"
+    "url": "https://github.com/fengyima/html-webpack-script-crossorigin-plugin.git"
+  }
 }
