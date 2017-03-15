@@ -1,0 +1,15 @@
+{
+  "name": "html-webpack-script-crossorigin-plugin",
+  "version": "1.0.0",
+  "description": "Plugin for htlm-webpack-plugin to add crossorigin attribute to injected script tag",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengyima/html-webpack-script-crossorigin-plugin"
+  },
+  "author": "fengyima",
+  "license": "ISC"
+}
